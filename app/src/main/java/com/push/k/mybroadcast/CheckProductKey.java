@@ -366,7 +366,7 @@ public class CheckProductKey extends AppCompatActivity {
         }catch (Exception ex)
         {
             rslt[0] = ex.getMessage();
-            //123
+            //
         }
         return rslt;
     }
