@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.push.k.mybroadcast">
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="11" />
+
+    <!-- WebService -->
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--<uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.push.k.mybroadcast.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.push.k.mybroadcast.permission.C2D_MESSAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.SET_DEBUG_APP"
+        android:required="false" />
+
+    <application
+        android:name=".ParseBrocast"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".RegistrationIntentService"
+            android:exported="false" />
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+                <category android:name="com.push.k.mybroadcast" />
+            </intent-filter>
+        </receiver>
+
+        <!-- [START Activity Region] -->
+        <activity
+            android:name=".MainActivity"
+            android:label="Login"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity3"
+            android:label="@string/title_activity_main3"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MessageList" />
+        <activity
+            android:name=".MessageDetails"
+            android:label="@string/title_activity_message_details"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeviceList"
+            android:label="@string/title_activity_device_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeviceDetail"
+            android:label="@string/title_activity_device_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InstantDeviceStatus"
+            android:label="@string/title_activity_instant_device_status"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GoogleLoginPage"
+            android:label="@string/title_activity_google_login_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ManagementWeb"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_management_web"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConnectionErrorPage"
+            android:label="@string/title_activity_connection_error_page"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FindBackAccount"
+            android:label="@string/title_activity_find_back_account"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WebSelectPage"
+            android:label="@string/title_activity_web_select_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FirstPage"
+            android:label="@string/title_activity_first_page"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MaxRegisterNumPage"
+            android:label="@string/title_activity_max_register_num_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CheckProductKey"
+            android:label="@string/title_activity_check_product_key"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SettingPage"
+            android:label="@string/title_activity_setting_page"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomDialog"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".repair_request"
+            android:label="@string/title_activity_repair_request"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RepairRequestDetails"
+            android:label="@string/title_activity_repair_request_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CreateRepairRequest"
+            android:label="@string/title_activity_create_repair_request"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- [END Activity Region] -->
+
+
+        <!-- [START gcm_receiver] -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="gcm.play.android.samples.com.gcmquickstart" />
+            </intent-filter>
+        </receiver>
+        <!-- [END gcm_receiver] -->
+
+
+        <!-- [START gcm_listener] -->
+        <service
+            android:name=".MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener] -->
+
+
+        <!-- [START instanceId_listener] -->
+        <service
+            android:name=".MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener] -->
+
+        <activity
+            android:name=".UserGWSelect"
+            android:label="@string/title_activity_user_gwselect"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AccountManagement"
+            android:label="@string/title_activity_account_management"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

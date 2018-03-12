@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.push.k.mybroadcast.CheckProductKey"
+    tools:showIn="@layout/activity_check_product_key">
+
+
+    <TableLayout  android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:stretchColumns="1"
+        >
+
+        <TableRow
+            android:background="@drawable/i01"
+            android:layout_weight="642">
+            <TextView
+            android:text=""
+            android:padding="3dip"
+            android:textColor="#ef1111"
+            android:textSize="24dp"
+            android:gravity="right"
+            android:textAlignment="gravity" />
+
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/i02"
+            android:layout_weight="82">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                />
+                <EditText
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:id="@+id/productkey"
+                    android:singleLine="true"
+                    android:inputType="textCapCharacters"
+                    android:ems="10"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    />
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                />
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/i03"
+            android:layout_weight="133">
+            <TextView
+                android:text=""
+                android:padding="3dip"
+                android:textColor="#ef1111"
+                android:textSize="24dp"
+                android:gravity="right"
+                android:textAlignment="gravity" />
+
+        </TableRow>
+        <TableRow
+            android:background="@drawable/i04"
+            android:layout_weight="82">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="91"
+                />
+            <ImageButton
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:id="@+id/signInBtn"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="458"
+                android:background="@drawable/btn"
+                android:onClick="confirmProductBtnClick"
+                />
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="91"
+                />
+
+        </TableRow>
+        <TableRow
+            android:background="@drawable/i05"
+            android:layout_weight="192">
+            <TextView
+                android:text=""
+                android:padding="3dip"
+                android:textColor="#ef1111"
+                android:textSize="24dp"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                />
+
+        </TableRow>
+
+        <!--<TableRow>-->
+            <!--<TextView-->
+                <!--android:text="請輸入產品序號:"-->
+                <!--android:padding="3dip"-->
+                <!--android:textColor="#ef1111"-->
+                <!--android:textSize="24dp"-->
+                <!--android:gravity="right"-->
+                <!--android:textAlignment="gravity" />-->
+
+        <!--</TableRow>-->
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<EditText-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:id="@+id/productkey"-->
+                <!--android:layout_column="0"-->
+                <!--android:layout_weight="2"-->
+                <!--android:layout_marginBottom="200dp"-->
+                <!--android:textAlignment="gravity"-->
+                <!--/>-->
+        <!--</TableRow>-->
+
+        <!--<TableRow>-->
+            <!--<TextView-->
+                <!--android:text=""-->
+                <!--android:padding="3dip"-->
+                <!--android:textColor="#ef1111"-->
+                <!--android:textSize="24dp"-->
+                <!--android:gravity="right"-->
+                <!--android:textAlignment="gravity" />-->
+
+        <!--</TableRow>-->
+
+        <!--<TableRow>-->
+            <!--<TextView-->
+                <!--android:text=""-->
+                <!--android:padding="3dip"-->
+                <!--android:textColor="#ef1111"-->
+                <!--android:textSize="24dp"-->
+                <!--android:gravity="right"-->
+                <!--android:textAlignment="gravity" />-->
+
+        <!--</TableRow>-->
+
+        <!--<TableRow>-->
+            <!--<TextView-->
+                <!--android:text=""-->
+                <!--android:padding="3dip"-->
+                <!--android:textColor="#ef1111"-->
+                <!--android:textSize="24dp"-->
+                <!--android:gravity="right"-->
+                <!--android:textAlignment="gravity" />-->
+
+        <!--</TableRow>-->
+
+        <!--<TableRow>-->
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="確定"-->
+            <!--android:id="@+id/button"-->
+            <!--android:layout_column="0"-->
+            <!--android:layout_weight="2"-->
+            <!--android:onClick="confirmProductBtnClick"/>-->
+        <!--</TableRow>-->
+
+    </TableLayout>
+
+</RelativeLayout>

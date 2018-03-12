@@ -1,0 +1,186 @@
+<resources>
+    <!--titles -->
+    <string name="title_activity_instant_device_status">Instant Status</string>
+    <string name="title_activity_google_login_page">PUSH Login</string>
+    <string name="title_activity_find_back_account">Link Account</string>
+    <string name="title_activity_web_select_page">Select Page</string>
+    <string name="title_activity_first_page">IoTPush</string>
+    <string name="title_activity_check_product_key">Imformations</string>
+    <string name="title_activity_change_intent">ChangeIntent</string>
+    <string name="gcm_defaultSenderId">897679755372</string>.
+    <string name="app_name">IoTPush</string>
+    <string name="action_settings">Settings</string>
+    <string name="mainText">Alarm</string>
+    <string name="Cancel">Cancel</string>
+    <string name="title_activity_main2">Notification List</string>
+    <string name="no_record">No Datas</string>
+    <string name="title_activity_device_list">Device List</string>
+    <string name="title_activity_device_detail">Details</string>
+    <!--titles -->
+
+    <!--Alert Message-->
+    <string name="MeeageTitle">Server Return</string>
+    <string name="Meeage_RegisterComplete">Complete!</string>
+    <string name="OK">OK</string>
+    <!--Alert Message-->
+
+    <!--Register Page-->
+    <string name="title_activity_max_register_num_page">Register</string>
+    <string name="RegisterPage_RegisterLabel">Register:</string>
+    <string name="RegisterPage_NameLabel">帳號:</string>
+    <string name="RegisterPage_EmailLabel">密碼:</string>
+    <string name="RegisterPage_PhoneLabel">Phone:</string>
+    <string name="RegisterPage_GenderLabel">Gender:</string>
+    <string name="RegisterPage_Notice1Label">Email will be yuor default account</string>
+    <string name="RegisterPage_Notice2Label">Default password will be 1234</string>
+    <string name="RegisterPage_RegisterButton">Login</string>
+    <string name="RegisterPage_BackButton">Back</string>
+    <string name="RegisterPage_DataNotComplete">Data Not Complete!</string>
+    <string name="RegisterPage_PhoneError">Phone Number Incorrect!</string>
+    <string name="RegisterPage_EmailError">Email Incorrect!</string>
+    <string-array name="GenderItems">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <!--Register Page-->
+
+    <!--Connection Error Page-->
+    <string name="title_activity_connection_error_page">Connection Error</string>
+    <string name="ConnectionErrorLabel">Connection Error!</string>
+    <string name="ConnectionErrorBtn">Retry</string>
+    <!--Connection Error Page-->
+
+    <!--Max Register Num Page-->
+    <string name="MaxRegisterLabel">Regist Limited,Reached Max Register Number!</string>
+    <string name="MaxRegisteQuitButtonr">Quit</string>
+    <!--Max Register Num Page-->
+
+    <!--Notification List Page-->
+    <string name="title_activity_main3">Broadcast List</string>
+    <!--Notification List Page-->
+
+    <!--Notification Details Page-->
+    <string name="title_activity_message_details">Details</string>
+    <string name="MessageDetails_DeviceLabel">Device:</string>
+    <string name="MessageDetails_TitleLabel">Title:</string>
+    <string name="MessageDetails_MessageLabel">Message:</string>
+    <string name="MessageDetails_DatetimeLabel">DateTime:</string>
+    <!--Notification Details Page-->
+
+    <!--Custom Dialog-->
+    <string name="CustomDialog_title">PUSH Notification</string>
+    <string name="CustomDialog_Details">Details</string>
+    <string name="CustomDialog_Cancel">Cancel</string>
+    <!--Custom Dialog-->
+
+    <!--Show Up Dialog-->
+    <string name="LeaveDiagTitle">IoTPush</string>
+    <string name="LeaveDiagBody">Quit?</string>
+    <string name="LeaveDiagConfirmText">OK</string>
+    <string name="LeaveDiagCancelText">Cancel</string>
+    <string name="Version">1.0.0.0005</string>
+    <string name="UpdateAppBody">Detected new version,Download new version or Quit?</string>
+    <string name="UpdateAppConfirmText">Download</string>
+    <string name="UpdateAppCancelText">Quit</string>
+    <!--Show Up Dialog-->
+
+    <!--Web Page-->
+    <string name="title_activity_management_web">Management Web</string>
+    <!--Web Page-->
+
+    <!--Setting Page-->
+    <string name="title_activity_setting_page">Settings</string>
+    <string name="Setting_ImforamationLabel">Imformations:</string>
+    <string name="Setting_NewDeviceButton">Change SN</string>
+    <string name="Setting_ChangeDeviceButton">Change Device</string>
+    <string name="Setting_ChangeAccountButton">Change Account</string>
+    <string name="Setting_DeviceIDLabel">Device ID:</string>
+    <string name="Setting_UserInfoLabel">User Info:</string>
+    <string name="Setting_NameLabel">Account:</string>
+    <string name="Setting_PhoneLabel">Phone:</string>
+    <string name="Setting_EmailLabel">Password:</string>
+    <string name="Setting_AppInfoLabel">APP Info:</string>
+    <string name="Setting_VersionLabel">Version:</string>
+    <string name="Setting_LanguageLabel">Language:</string>
+    <string-array name="LanguageItems">
+        <item>English</item>
+        <item>Traditional Chinese</item>
+    </string-array>
+    <!--Setting Page-->
+
+    <!--Repair List Page-->
+    <string name="title_activity_repair_request">Repair Request</string>
+    <string name="RepairListAddButton">Add Request</string>
+    <!--Repair List Page-->
+
+    <!--Repair Detail Page-->
+    <string name="title_activity_repair_request_details">Request Details</string>
+    <string name="RepairDetailNOLabel">NO:</string>
+    <string name="RepairDetailDeviceLabel">Device:</string>
+    <string name="RepairDetailRequesterLabel">Requester:</string>
+    <string name="RepairDetailPhoneLabel">Phone:</string>
+    <string name="RepairDetailStartTimeLabel">StartTime:</string>
+    <string name="RepairDetailEndTimeLabel">EndTime:</string>
+    <string name="RepairDetailDeleteButton">Delete</string>
+    <!--Repair Detail Page-->
+
+    <!--Repair Create Page-->
+    <string name="title_activity_create_repair_request">Create Repair Request</string>
+    <string name="CreateRepairDeviceLabel">Device:</string>
+    <string name="CreateRepairStartTimeLabel">StartTime:</string>
+    <string name="CreateRepairEndTimeLabel">EndTime:</string>
+    <string name="CreateRepairYearLabel">Year</string>
+    <string name="CreateRepairMonthLabel">Month</string>
+    <string name="CreateRepairDayLabel">Day</string>
+    <string name="CreateRepairHourLabel">Hour</string>
+    <string name="CreateRepairMinuteLabel">Minute</string>
+    <string name="CreateRepairCreateButton">Create Request</string>
+    <!--Repair Create Page-->
+
+    <!--Gateway Select Page-->
+    <string name="title_activity_user_gwselect">Gateway Select</string>
+    <!--Gateway Select Page-->
+
+
+    <string name="gcm_send_message">Token retrieved and sent to server! You can now use gcmsender to
+        send downstream messages to this app.</string>
+    <string name="registering_message">Generating InstanceID token...</string>
+    <string name="token_error_message">An error occurred while either fetching the InstanceID token,
+        sending the fetched token to the server or subscribing to the PubSub topic. Please try
+        running the sample again.</string>
+    <string name="Language_Spinner">Language Spinner</string>
+    <string-array name="lunch">
+        <item>English</item>
+        <item>Chinese(Traditional)</item>
+    </string-array>
+    <string name="title_activity_account_manage">AccountManage</string>
+    <string name="title_activity_account_edit">AccountEdit</string>
+    <string name="title_activity_account_management">AccountManagement</string>
+
+
+    <string-array name="languages">
+        <item>Austria</item>
+        <item>Brazil</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Cuba</item>
+        <item>Denmark</item>
+        <item>Egypt</item>
+        <item>Estonia</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Greece</item>
+        <item>Hong Kong</item>
+        <item>Ireland</item>
+        <item>Italy</item>
+        <item>Japan</item>
+        <item>Malaysia</item>
+        <item>Poland</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Spain</item>
+        <item>Switzerland</item>
+        <item>Taiwan</item>
+    </string-array>
+</resources>

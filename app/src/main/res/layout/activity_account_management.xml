@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/AccountManagement"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.push.k.mybroadcast.AccountManagement">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@android:style/ButtonBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:visibility="gone"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:id="@+id/footer"
+            style="@android:style/ButtonBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <TableRow>
+
+                    <ImageButton
+                        android:id="@+id/webpage"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:scaleType="fitCenter"
+                        android:onClick="webpageClick"
+                        android:src="@drawable/bookshelf" />
+
+                    <ImageButton
+                        android:id="@+id/btnInfo"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:onClick="btnInfoClick"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/gear" />
+                </TableRow>
+            </TableLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_account_management"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</android.support.design.widget.CoordinatorLayout>

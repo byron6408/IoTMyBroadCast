@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_device_detail"
+    tools:context="com.push.k.mybroadcast.DeviceDetail">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow>
+            <TextView
+                android:text="DeviceID:"
+                android:padding="3dip"
+                android:gravity="right"
+                android:textAlignment="gravity" />
+            <TextView
+                android:id="@+id/DEV_ID"
+                android:text=""
+                android:gravity="left"
+                android:padding="3dip"
+                android:ellipsize="none"
+                android:maxLines="100"
+                android:scrollHorizontally="false"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:gravity="right"
+                android:text="Name:"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/DEV_NAME"
+                android:text=""
+                android:gravity="left"
+                android:padding="3dip"
+                android:ellipsize="none"
+                android:maxLines="100"
+                android:scrollHorizontally="false"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:gravity="right"
+                android:text="Channel Type:"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/TYPE"
+                android:text=""
+                android:gravity="left"
+                android:padding="3dip"
+                android:ellipsize="none"
+                android:maxLines="100"
+                android:scrollHorizontally="false"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:gravity="right"
+                android:text="Channel Name:"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/CH_NAME"
+                android:text=""
+                android:gravity="left"
+                android:padding="3dip"
+                android:ellipsize="none"
+                android:maxLines="100"
+                android:scrollHorizontally="false"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:gravity="right"
+                android:text="IP:"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/DEV_IP"
+                android:text=""
+                android:gravity="left"
+                android:padding="3dip"
+                android:ellipsize="none"
+                android:maxLines="100"
+                android:scrollHorizontally="false"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:gravity="right"
+                android:text="PORT:"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/DEV_PORT"
+                android:text=""
+                android:gravity="left"
+                android:padding="3dip"
+                android:ellipsize="none"
+                android:maxLines="100"
+                android:scrollHorizontally="false"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/AI_ONOFF_l"
+                android:gravity="right"
+                android:visibility="gone"
+                android:text="AI ONOFF:"
+                android:padding="3dip" />
+
+            <Switch
+                android:gravity="left"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="100dp"
+                android:textOn="AI ON"
+                android:textOff="AI OFF"
+                android:id="@+id/AI_ONOFF"
+                 />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/DI_ONOFF_l"
+                android:gravity="right"
+                android:visibility="gone"
+                android:text="DI ONOFF:"
+                android:padding="3dip" />
+            <Switch
+                android:gravity="left"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="100dp"
+                android:textOn="DI ON"
+                android:textOff="DI OFF"
+                android:id="@+id/DI_ONOFF"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/AO_ONOFF_l"
+                android:gravity="right"
+                android:visibility="gone"
+                android:text="AO ONOFF:"
+                android:padding="3dip" />
+            <Switch
+                android:gravity="left"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="100dp"
+                android:textOn="AO ON"
+                android:textOff="AO OFF"
+                android:id="@+id/AO_ONOFF"
+                />
+        </TableRow>
+        <TableRow>
+        <TextView
+            android:id="@+id/DO_ONOFF_l"
+            android:gravity="right"
+            android:visibility="gone"
+            android:text="DO ONOFF:"
+            android:padding="3dip" />
+        <Switch
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:switchMinWidth="100dp"
+            android:textOn="DO ON"
+            android:textOff="DO OFF"
+            android:id="@+id/DO_ONOFF"
+            />
+    </TableRow>
+
+        <TableRow>
+            <TextView
+                android:gravity="right"
+                android:text=""
+                android:padding="3dip"
+                android:longClickable="false" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/maxtemparature_l"
+                android:gravity="center_vertical|right"
+                android:text="MAX:"
+                android:longClickable="false" />
+
+            <EditText
+                android:layout_width="20dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:maxEms="120"
+                android:minEms="0"
+                android:id="@+id/maxtemparature"
+                />
+
+        </TableRow>
+
+
+        <TableRow>
+        <TextView
+            android:id="@+id/mintemparature_l"
+            android:gravity="center_vertical|right"
+            android:visibility="gone"
+            android:text="MIN:"
+            android:longClickable="false" />
+
+            <EditText
+                android:layout_width="20dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:maxEms="120"
+                android:minEms="0"
+                android:id="@+id/mintemparature"
+                />
+
+        </TableRow>
+        <TextView
+            android:gravity="right"
+            android:visibility="gone"
+            android:text=""
+            android:padding="3dip"
+            android:longClickable="false" />
+
+        <TableRow>
+            <TextView
+                android:id="@+id/value_l"
+                android:gravity="center_vertical|right"
+                android:visibility="gone"
+                android:text="Value:"
+                android:longClickable="false" />
+
+            <EditText
+                android:layout_width="20dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:maxEms="1"
+                android:minEms="0"
+                android:id="@+id/value"
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:gravity="right"
+                android:visibility="gone"
+                android:text=""
+                android:padding="3dip"
+                android:longClickable="false" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/DuringTime_l"
+                android:gravity="center_vertical|right"
+                android:visibility="gone"
+                android:text="DuringTime:"
+                android:longClickable="false" />
+
+            <EditText
+                android:layout_width="20dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:maxEms="1"
+                android:minEms="30000"
+                android:id="@+id/DuringTime"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:id="@+id/BackButton"
+                android:layout_below="@+id/scrollView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="5"
+                android:onClick="changeToDeviceList"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Apply"
+                android:id="@+id/apply_settimg"
+                android:layout_below="@+id/scrollView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="5"
+                android:onClick="apply_setting_click"
+                android:visibility="gone"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

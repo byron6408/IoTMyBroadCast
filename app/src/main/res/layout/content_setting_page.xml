@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.push.k.mybroadcast.SettingPage"
+    tools:showIn="@layout/activity_setting_page">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:stretchColumns="1"
+        android:layout_marginBottom="54dp"
+        >
+
+        <TableRow >
+        <TextView
+            android:gravity="left"
+            android:text="@string/Setting_ImforamationLabel"
+            android:textSize="16sp"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:textColor="#00F"/>
+
+            <TextView
+                android:id="@+id/productNo"
+                android:text=""
+                android:textSize="16sp"
+                android:gravity="left"
+                android:padding="3dip"
+                android:maxLines="100"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:scrollHorizontally="false"/>
+    </TableRow>
+        <TableRow android:background="#e1e1e1" >
+            <TextView
+                android:layout_height="2dp"
+                android:gravity="right"
+                android:layout_weight="3"/>
+        </TableRow>
+        <TextView
+            android:layout_height="2dp"
+            android:gravity="right"
+            android:layout_weight="3"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TableRow >
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="@string/Setting_NewDeviceButton"
+            android:id="@+id/changeKeyBtn"
+            android:onClick="changeKeyBtn_Click"
+            android:textSize="16dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="15px"
+            android:layout_marginBottom="10px"
+            android:layout_marginRight="15px"
+            android:background="@drawable/graybutton"/>
+
+            <Button
+                android:id="@+id/changeDeviceBtn"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="10px"
+                android:layout_weight="1"
+                android:background="@drawable/graybutton"
+                android:onClick="changeDeviceBtn_Click"
+                android:text="@string/Setting_ChangeDeviceButton"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+
+            </TableRow>
+
+        <TableRow >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:text="@string/Setting_ChangeAccountButton"
+                android:id="@+id/changeAccountBtn"
+                android:onClick="changeAccountBtn_Click"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="15px"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="15px"
+                android:background="@drawable/graybutton"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="right"
+                android:visibility="gone" />
+        </TableRow>
+    </TableLayout>
+
+        <TableRow android:background="#e1e1e1" >
+            <TextView
+                android:layout_height="2dp"
+                android:gravity="right"
+                android:layout_weight="3"/>
+        </TableRow>
+
+        <TableRow
+            android:visibility="gone">
+            <TextView
+                android:gravity="left"
+                android:text="@string/Setting_DeviceIDLabel"
+                android:padding="3dip"
+                android:textColor="#000"/>
+
+
+
+        </TableRow>
+
+        <TableRow >
+            <TextView
+                android:gravity="left"
+                android:text="@string/Setting_UserInfoLabel"
+                android:textSize="16dp"
+                android:padding="3dip"
+                android:textColor="#00F"/>
+        </TableRow>
+
+        <TableRow android:background="#e1e1e1" >
+            <TextView
+                android:layout_height="2dp"
+                android:textSize="16dp"
+                android:gravity="right"
+                android:layout_weight="3"/>
+        </TableRow>
+        <TableRow >
+
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:gravity="left"
+                android:text="@string/Setting_NameLabel"
+                android:textSize="16dp"
+                android:padding="3dip"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/userName"
+                android:text=""
+                android:textSize="16dp"
+                android:gravity="left"
+                android:padding="3dip"
+                android:maxLines="100"
+                android:textColor="#000"
+                android:scrollHorizontally="false"/>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="@string/Setting_PhoneLabel"
+                android:textColor="#000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/userPhone"
+                android:gravity="left"
+                android:maxLines="100"
+                android:padding="3dip"
+                android:scrollHorizontally="false"
+                android:text=""
+                android:textColor="#000"
+                android:visibility="gone" />
+        </TableRow>
+
+        <TableRow android:visibility="gone">
+
+            <TextView
+                android:gravity="left"
+                android:textSize="16dp"
+                android:padding="3dip"
+                android:text="@string/Setting_EmailLabel"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/userEmail"
+                android:gravity="left"
+                android:textSize="16dp"
+                android:maxLines="100"
+                android:padding="3dip"
+                android:scrollHorizontally="false"
+                android:text=""
+                android:textColor="#000" />
+        </TableRow>
+
+        <TableRow >
+            <TextView
+                android:gravity="left"
+                android:text="@string/Setting_AppInfoLabel"
+                android:textSize="16dp"
+                android:padding="3dip"
+                android:textColor="#00F"/>
+        </TableRow>
+
+        <TableRow android:background="#e1e1e1" >
+            <TextView
+                android:layout_height="2dp"
+                android:gravity="right"
+                android:textSize="16dp"
+                android:layout_weight="3"/>
+        </TableRow>
+
+        <TableRow >
+            <TextView
+                android:gravity="left"
+                android:text="@string/Setting_VersionLabel"
+                android:textSize="16dp"
+                android:padding="3dip"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/nowVersion"
+                android:text=""
+                android:textSize="16dp"
+                android:gravity="left"
+                android:padding="3dip"
+                android:maxLines="100"
+                android:textColor="#000"
+                android:scrollHorizontally="false"/>
+        </TableRow>
+        <TextView
+            android:layout_height="2dp"
+            android:gravity="right"
+            android:layout_weight="3"/>
+        <TableRow android:background="#e1e1e1" >
+            <TextView
+                android:layout_height="2dp"
+                android:gravity="right"
+                android:layout_weight="3"/>
+        </TableRow>
+
+        <TableRow >
+            <TextView
+                android:gravity="left"
+                android:text="@string/Setting_LanguageLabel"
+                android:textSize="16dp"
+                android:padding="3dip"
+                android:textColor="#000"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:id="@+id/spinner2"
+                android:entries="@array/LanguageItems"
+                />
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+</ScrollView>

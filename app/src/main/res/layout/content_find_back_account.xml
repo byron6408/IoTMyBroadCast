@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.push.k.mybroadcast.FindBackAccount"
+    tools:showIn="@layout/activity_find_back_account">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TableRow>
+            <TextView
+                android:gravity="left"
+                android:text="Link Account"
+                android:textColor="#ef1111"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow android:visibility="gone">
+        <TextView
+            android:gravity="left"
+            android:text="NO:"
+            android:padding="3dip" />
+        <EditText
+            android:id="@+id/findback_id"
+            android:text=""
+            android:gravity="left"
+            android:padding="3dip"
+            android:ellipsize="none"
+            android:maxLines="100"
+            android:width="200dp"
+            android:scrollHorizontally="false"/>
+    </TableRow>
+
+        <TableRow>
+            <TextView
+                android:gravity="left"
+                android:text="E Mail:"
+                android:padding="3dip" />
+            <EditText
+                android:id="@+id/findback_email"
+                android:text=""
+                android:gravity="left"
+                android:padding="3dip"
+                android:ellipsize="none"
+                android:maxLines="100"
+                android:width="200dp"
+                android:scrollHorizontally="false"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:gravity="right"
+                android:text=" "
+                android:padding="3dip" />
+
+        </TableRow>
+
+        <TableRow>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:id="@+id/findback_cancel_btn"
+                android:onClick="findback_cancel_btn_Click"
+                android:layout_alignTop="@+id/button3"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:id="@+id/findback_confirm_btn"
+                android:onClick="findback_confirm_Click"
+                android:layout_alignTop="@+id/button3"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

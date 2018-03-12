@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.push.k.mybroadcast.AccountManagement"
+    tools:showIn="@layout/activity_account_management">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:stretchColumns="1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/loginborder">
+
+        <TableRow>
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="180px"
+                android:id="@+id/textView10"
+                android:layout_weight="2"
+                android:textSize="40dp"
+                android:textColor="#010101"
+                android:background="@drawable/loginbg"
+                android:scaleType="fitCenter"/>
+        </TableRow>
+        <TableRow android:paddingTop="55dp">
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/RegisterPage_NameLabel"
+                android:id="@+id/textView9"
+                android:layout_weight="2"
+                android:textSize="20dp"
+                android:textColor="#010101" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/AccountManagement_Account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:ems="30"
+                android:inputType="textPersonName"
+                android:text="" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/RegisterPage_EmailLabel"
+                android:layout_weight="2"
+                android:textSize="20dp"
+                android:textColor="#010101" />
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:inputType="textPassword"
+                android:ems="30"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:id="@+id/AccountManagement_Password" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:onClick="findback_btn_Click"
+                android:text="Link Account"
+                android:layout_weight="2"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/AccountManagement_LoginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2"
+                android:onClick="loginNewBtn_Click"
+                android:text="@string/RegisterPage_RegisterButton"
+                android:background="@drawable/submit_btn"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5">
+            </Button>
+        </TableRow>
+        <TableRow android:paddingTop="55dp">
+
+        </TableRow>
+    </TableLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.push.k.mybroadcast.MaxRegisterNumPage"
+    tools:showIn="@layout/activity_max_register_num_page">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MaxRegisterLabel"
+        android:id="@+id/textView7"
+        android:textStyle="bold"
+        android:textColor="#ef1111"
+        android:layout_marginTop="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link Account"
+        android:id="@+id/button5"
+        android:onClick="findback_btn_Click"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_marginTop="61dp"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MaxRegisteQuitButtonr"
+        android:id="@+id/button6"
+        android:onClick="cancel_btn_Click"
+        android:layout_alignTop="@+id/button5"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7" />
+</RelativeLayout>
